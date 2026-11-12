@@ -1,0 +1,43 @@
+{
+    "name": "mattmiranda55/mailchimp-laravel",
+    "description": "Wrapper library for using Mailchimp/Mandrill in Laravel projects",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "illuminate/http": "^10.0|^11.0|^12.0",
+        "illuminate/support": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mattmiranda55\\MailchimpLaravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mattmiranda55\\MailchimpLaravel\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mattmiranda55\\MailchimpLaravel\\MailchimpServiceProvider"
+            ],
+            "aliases": {
+                "Mailchimp": "Mattmiranda55\\MailchimpLaravel\\Facades\\Mailchimp"
+            }
+        }
+    },
+    "authors": [
+        {
+            "name": "Matt Miranda",
+            "email": "matt@mattmiranda.dev"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
